@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Black: hsl(0, 0%, 0%);
+  --Red: hsl(0, 78%, 62%);
+  --Cyan: hsl(180, 62%, 55%);
+  --Orange: hsl(34, 97%, 64%);
+  --Blue: hsl(212, 86%, 64%);
+  --Very-Dark-Blue: hsl(234, 12%, 34%);
+  --Grayish-Blue: hsl(229, 6%, 66%);
+  --Very-Light-Gray: hsl(0, 0%, 98%);
+  --shadow: hsla(213, 39%, 89%, 0.75);
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 15px;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Poppins";
+  background-color: var(--Very-Light-Gray);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+.master {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.titles {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 30rem;
+  text-align: center;
+}
+
+.title1 {
+  font-size: 1.8rem;
+  font-weight: 200;
+  color: var(--Very-Dark-Blue);
+  height: 2.25rem;
+}
+
+.title2 {
+  font-size: 1.9rem;
+  font-weight: 600;
+  color: var(--Very-Dark-Blue);
+  margin-bottom: 1.25rem;
+  height: 2.25rem;
+}
+
+.description {
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: var(--Grayish-Blue);
+  margin-bottom: 2rem;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.column1,
+.column2,
+.column3 {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.icon-supervisor,
+.icon-teambuilder,
+.icon-karma,
+.icon-calculator {
+  border: 2px solid transparent;
+  border-radius: 0.25rem;
+  padding: 1rem 1.5rem;
+  box-shadow: 0px 5px 10px 0px var(--shadow);
+}
+
+.icon-supervisor {
+  border-top: medium solid var(--Cyan);
+}
+
+.icon-teambuilder {
+  border-top: medium solid var(--Red);
+}
+
+.icon-karma {
+  border-top: medium solid var(--Orange);
+}
+
+.icon-calculator {
+  border-top: medium solid var(--Blue);
+}
+
+.category {
+  font-size: 1rem;
+  color: var(--Very-Dark-Blue);
+  margin-bottom: 0.5rem;
+}
+
+.overview {
+  font-size: 0.65rem;
+  color: var(--Grayish-Blue);
+  max-width: 13rem;
+  margin-bottom: 2rem;
+}
+
+.icon {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 0.75rem;
+}
+
+.icon img {
+  width: 25%;
+}
+
+@media only screen and (width <= 600px) {
+  .cards {
+    flex-direction: column;
+  }
+
+  .titles {
+    margin-top: 1rem;
+  }
+
+  .title1 {
+    font-size: 1.4rem;
+  }
+
+  .title2 {
+    font-size: 1.4rem;
+  }
+
+  .description {
+    margin: 0rem 3.5rem 3rem 3.5rem;
+  }
+
+  .overview {
+    max-width: 12.5rem;
+  }
+}

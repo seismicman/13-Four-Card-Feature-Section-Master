@@ -24,7 +24,7 @@ This is a solution to the [Four card feature section challenge on Frontend Mento
 
 ### Links
 
-Solution URL: [https://seismicman.github.io/12-Article-Preview-Component-Master/](https://seismicman.github.io/12-Article-Preview-Component-Master/)
+Solution URL: [https://seismicman.github.io/13-Four-Card-Feature-Section-Master/](https://seismicman.github.io/13-Four-Card-Feature-Section-Master/)
 
 ## My process
 
@@ -39,7 +39,7 @@ Solution URL: [https://seismicman.github.io/12-Article-Preview-Component-Master/
 
 This a project that we can mainly develop in HTML and CSS. However, I developed it in React using components and CSS for the styles. It was so useful to understand the HTML elements "figure" and "fig-caption". Also, in this project I used some parameters of the cards to define individual classes for each one.
 
-Also, it was very useful to understand Flexbox to organize the different components of the User Interface and the use of media queries to switch between desktop and mobile versions.
+Also, it was very useful to understand Flexbox to organize the different components of the User Interface and the use of media queries to switch between desktop and mobile versions. In this project I used a new format (at least for me) for mediaqueries in CSS with logical operators instead a format "min-width/max-width: 9999px"
 
 Regarding the functionality of this challenge in react, I used a component "Card" to avoid repeating code and to have a reusable component receiving parameters, and this content in a "Cards" component.
 
